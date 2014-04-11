@@ -5,6 +5,7 @@ StopAndShop::Application.routes.draw do
 
   root :to => "products#index"
   resources :products
-  resources :users
-  resources :sessions
+  resources :users, :only => [:new, :create]
+  resources :sessions, :except => [:show, :edit, :update]
+  resources :product_uploads
 end

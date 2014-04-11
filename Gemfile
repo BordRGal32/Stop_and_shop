@@ -12,6 +12,7 @@ gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'rghost'
 gem 'bcrypt'
 gem 'faker'
+gem 'smarter_csv'
 
 
 

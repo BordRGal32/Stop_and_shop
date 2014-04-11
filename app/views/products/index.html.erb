@@ -6,4 +6,5 @@
 
 <% if !current_user.nil? %>
   <%= link_to 'New Product', new_product_path, :class => 'btn btn-info' %>
+  <%= link_to 'Upload Product', new_product_upload_path, :class => 'btn btn-info' %>
 <% end %>
