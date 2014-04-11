@@ -1,3 +1,8 @@
+body {
+  font-family: 'Balthazar', serif;
+  background-color: #A58CDE;
+}
+
 .navbar {
   color: white;
   font-size: 30px;
@@ -5,15 +10,22 @@
 }
 .navbar .pull-right {
   font-size: 20px;
-  color: purple;
+  color: #CE3981;
+
 }
 
 .navbar .pull-right a {
-  color: purple;
+  color: #CE3981;
+  font-family: 'Share Tech Mono';
 }
 
 .logo {
   font-family: 'Sonsie One', cursive;
+}
+
+.product a {
+  color: #CE3981;
+  font-size: 15px;
 }
 
 input {
@@ -22,4 +34,13 @@ input {
 
 textarea {
   border-radius: 5px;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #CE3981;
 }

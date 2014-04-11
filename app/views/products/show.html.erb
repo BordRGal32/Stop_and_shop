@@ -4,7 +4,7 @@
 <p><%=@product.description%></p>
 
 <%= content_for(:navigation) do %>
-  <p><%= link_to "Main Page", "/" %> | <%= link_to "Edit Product", edit_product_path(@product) %> | <%= link_to "Delete Product", product_path(@product), :data =>
+  <p><%= link_to "Edit Product", edit_product_path(@product) %> | <%= link_to "Delete Product", product_path(@product), :data =>
                                                                                                     {:confirm => "Are You Sure You Want to Delete #{@product.name}?",
                                                                                                       :method => "delete"} %> </p>
 <% end %>
