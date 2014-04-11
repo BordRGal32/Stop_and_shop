@@ -1,0 +1,8 @@
+
+development:
+  adapter: postgresql
+  database: stop_and_shop_development
+test:
+  adapter: postgresql
+  database: stop_and_shop_test
+
