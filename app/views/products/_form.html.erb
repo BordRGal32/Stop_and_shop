@@ -13,5 +13,8 @@
 <%= f.label :price %>
 <%= f.number_field :price, :class => 'form-control', :step => 'any' %>
 </div>
+  <%= f.label :image, 'Add Product Image' %>
+  <%= f.file_field :image %><br>
+
 <%= f.submit :class => "btn btn-info" %>
 <%end%>

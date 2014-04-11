@@ -1,10 +1,14 @@
 <h1>Welcome to Stop and Shop</h1>
 
   <% @products.each do |product| %>
-  <p class="product"><%= link_to product.name, product_path(product) %> $<%=product.price %></p>
+  <p class="product">
+    <% if !product.image.url.nil? %>
+      <%=link_to image_tag(product.image.url(:thumb)), product_path(product) %>
+    <% end %>
+    <%= link_to product.name, product_path(product) %> $<%=product.price %></p>
   <%end%>
 
 <% if !current_user.nil? %>
   <%= link_to 'New Product', new_product_path, :class => 'btn btn-info' %>
-  <%= link_to 'Upload Product', new_product_upload_path, :class => 'btn btn-info' %>
+  <%= link_to 'Upload Products from CSV', new_product_upload_path, :class => 'btn btn-info' %>
 <% end %>

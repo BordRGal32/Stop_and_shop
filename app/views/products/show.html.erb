@@ -2,6 +2,7 @@
 
 <p>$<%=@product.price%></p>
 <p><%=@product.description%></p>
+<p><%=image_tag @product.image.url(:medium) %>
 
 <%= content_for(:navigation) do %>
   <p><%= link_to "Edit Product", edit_product_path(@product) %> | <%= link_to "Delete Product", product_path(@product), :data =>
