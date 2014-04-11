@@ -1,0 +1,9 @@
+<h1>Welcome to Stop and Shop</h1>
+
+<ul>
+  <% @products.each do |product| %>
+  <li><%= link_to product.name, product_path(product) %> $<%=product.price %></li>
+  <%end%>
+</ul>
+
+<%= link_to 'New Product', new_product_path, :class => 'btn btn-danger' %>

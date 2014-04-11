@@ -1,0 +1,25 @@
+.navbar {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+}
+.navbar .pull-right {
+  font-size: 20px;
+  color: purple;
+}
+
+.navbar .pull-right a {
+  color: purple;
+}
+
+.logo {
+  font-family: 'Sonsie One', cursive;
+}
+
+input {
+  border-radius: 5px;
+}
+
+textarea {
+  border-radius: 5px;
+}
